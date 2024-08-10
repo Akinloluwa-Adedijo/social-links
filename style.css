@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+  margin: auto;
+  font-family: Inter, Arial;
+}
+.container {
+  background-color: rgba(20, 20, 20, 255);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  background-color: rgba(31, 31, 31, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+@media (width < 400px) {
+  .container {
+    padding: 20px;
+  }
+  .card-container {
+    padding: 20px;
+  }
+}
+
+.card-profile-picture img {
+  width: 75px;
+  border-radius: 100%;
+}
+
+.card-intro,
+.card-bottom,
+.card-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-button-container {
+  width: 300px;
+}
+
+.card-title {
+  font-size: 32px;
+  color: white;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.card-location {
+  font-size: 18px;
+  color: rgb(205, 233, 101);
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.card-quote {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 255);
+  margin-bottom: 20px;
+}
+.card-button {
+  font-family: Inter, Arial;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(51, 51, 51, 255);
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  background-color: rgb(205, 233, 101);
+  color: black;
+}
